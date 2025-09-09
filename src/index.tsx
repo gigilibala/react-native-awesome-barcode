@@ -17,7 +17,7 @@ type BarcodeProps = {
 
 export function Barcode({ value, onError, ...options }: BarcodeProps) {
   const svgText = barcodeSvg(value, onError, options);
-  return <SvgXml xml={svgText} />;
+  return <SvgXml xml={svgText} onError={onError} width={'100%'} />;
 }
 
 export function barcodeSvg(

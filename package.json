@@ -41,9 +41,11 @@
     "release": "release-it --only-version"
   },
   "keywords": [
+    "barcode",
     "react-native",
     "ios",
-    "android"
+    "android",
+    "web"
   ],
   "repository": {
     "type": "git",
