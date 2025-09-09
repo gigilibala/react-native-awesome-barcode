@@ -1,26 +1,53 @@
 # react-native-awesome-barcode
 
-description
+A react native library for generating barcodes.
+
+- It uses [JsBarcode](https://github.com/lindell/JsBarcode) and is fully compatible with JsBarcode.
+- It uses [react-native-svg](https://github.com/software-mansion/react-native-svg) to render the barcodes.
+- It is written in typescript.
+
+![example1][example/assets/example1.png]
+
 
 ## Installation
 
-
 ```sh
-npm install react-native-awesome-barcode
+yarn add react-native-svg react-native-awesome-barcode
 ```
-
 
 ## Usage
 
+For the list of options that can be passed to the `Barcode` component, see the [JsBarcode documentation](https://github.com/lindell/JsBarcode).
 
-```js
-import { multiply } from 'react-native-awesome-barcode';
+To use the JSX components, you can import them from the library package like so:
+
+```ts
+import { Barcode } from 'react-native-awesome-barcode';
 
 // ...
 
-const result = await multiply(3, 7);
+<Barcode value={'Hello World!'}  />
+
 ```
 
+To get the SVG text, you can use the `barcodeSvg` function:
+
+```ts
+import { barcodeSvg } from 'react-native-awesome-barcode';
+
+// ...
+
+const svgText = barcodeSvg('Hello World!');
+
+```
+
+##  Run example app
+
+To run the example app do:
+
+```sh
+yarn example start
+```
 
 ## Contributing
 

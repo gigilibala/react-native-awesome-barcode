@@ -1,12 +1,13 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-awesome-barcode';
-
-const result = multiply(3, 7);
+import { StyleSheet, View } from 'react-native';
+import { Barcode } from 'react-native-awesome-barcode';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Barcode value={'Hello World!'} />
+      <Barcode value={'Hello World!'} lineColor={'blue'} />
+      <Barcode value={'123456789012'} format={'upc'} />
+      <Barcode value={'Nice!'} displayValue={false} />
     </View>
   );
 }
