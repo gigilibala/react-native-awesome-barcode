@@ -1,6 +1,6 @@
 {
   "name": "react-native-awesome-barcode",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A react native library for generating barcodes using JsBarcode and xmldom.",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",
