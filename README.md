@@ -6,7 +6,7 @@ A react native library for generating barcodes.
 - It uses [react-native-svg](https://github.com/software-mansion/react-native-svg) to render the barcodes.
 - It is written in typescript.
 
-![example1][example/assets/example1.png]
+![example1](example/assets/example2.png)
 
 
 ## Installation
